@@ -10,8 +10,8 @@ from blast import Blast
 carte1 = Carte(5, "inutile", "Vous voyez un caillou ...\n")
 carte2 = Carte(10, "inutile", "Vous voyez un gros caillou !\n")
 carte3 = Cristal(0, "cristalDeMana", "Vous posez un cristal de mana !\n", 5)
-carte4 = Creature(15, "creature", "Un gros méchant arrive dans votre zone de jeu !\n", 5, 5)
-carte5 = Blast(10, "blast", "Vous lancez un sort !\n", 5)
+carte4 = Creature(15, "creature", "Un gros méchant arrive dans la zone de jeu ! ( 5 pv , 5 atk )\n", 5, 5)
+carte5 = Blast(10, "blast", "Vous lancez un sort qui inflige 5 dégâts !\n", 5)
 
 perso1 = Mage("Confucius", 20, 20)
 
@@ -31,6 +31,7 @@ perso2.remplirMain(carte3)
 perso2.remplirMain(carte4)
 perso2.remplirMain(carte5)
 
+print(" ")
 perso2.jouerCarte(3, nullcontext)
 
 # Jeu
@@ -104,7 +105,7 @@ if perso1.montreZoneDeJeu() != 0:
     # Check pour savoir si le joueur adverse est en vie
 
     if perso2.pv <= 0:
-        print("Victoire pour " + perso1.nom + " !")
+        print("Victoire pour " + perso1.nom + " !\n")
 
 else:
-    print("Votre zone de jeu est vide")
+    print("Votre zone de jeu est vide\n")
