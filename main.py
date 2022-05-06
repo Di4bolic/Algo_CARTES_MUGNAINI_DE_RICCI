@@ -9,7 +9,7 @@ from blast import Blast
 
 carte1 = Carte(5, "inutile", "Vous voyez un caillou ...\n")
 carte2 = Carte(10, "inutile", "Vous voyez un gros caillou !\n")
-carte3 = Cristal(0, "cristalDeMana", "Vous posez un cristal de mana !\n", 5)
+carte3 = Cristal(0, "cristalDeMana", "Votre mana maximum augmente définitivement de 5 !\n", 5)
 carte4 = Creature(15, "creature", "Un gros méchant arrive dans la zone de jeu ! ( 5 pv , 5 atk )\n", 5, 5)
 carte5 = Blast(10, "blast", "Vous lancez un sort qui inflige 5 dégâts !\n", 5)
 
