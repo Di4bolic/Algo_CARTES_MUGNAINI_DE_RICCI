@@ -36,6 +36,3 @@ class Mage:
             self.zoneDeJeu.append(self.main[numCarte])
         self.main[numCarte].utiliser(entite)
         del self.main[numCarte]
-
-    def attaque(self,entite):
-        pass
